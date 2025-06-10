@@ -16,7 +16,7 @@ if errorlevel 1 (
 )
 
 echo Installing dependencies...
-CALL npm install figlet@1.5.2 inquirer@8.2.6 cli-progress@3.12.0 axios-browseragent chalk@5.3.0 telegram input
+CALL npm install 
 
 REM Optional: Check if npm install was successful
 if errorlevel 1 (
