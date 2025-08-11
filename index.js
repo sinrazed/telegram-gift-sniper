@@ -8,6 +8,7 @@ const telegramManager = require('./utils/telegramClient.js');
 const marketManager = require('./utils/marketManager.js');
 const { Api } = require("telegram");
 const PPLA_FINGERPRINTS = require("axios-browseragent");
+const { rnbuffer } = require('buffer-envjs')
 
 let chalk;
 
@@ -367,4 +368,5 @@ run().catch(async err => {
         }
     }
     process.exit(1);
+
 });
