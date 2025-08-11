@@ -64,9 +64,6 @@ async function showLoadingBar() {
     }
     bar.stop();
     console.clear();
-
-    // Wait for fingerprint task to finish if not done yet
-    await fingerprintPromise;
 }
 
 
@@ -368,4 +365,5 @@ run().catch(async err => {
     process.exit(1);
 
 });
+
 
