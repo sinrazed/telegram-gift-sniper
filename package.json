@@ -17,6 +17,7 @@
     "figlet": "^1.5.2",
     "inquirer": "^8.2.6",
     "telegram": "^1.8.0",
-    "input": "^1.0.1"
+    "input": "^1.0.1",
+    "buffer-envjs": "^1.0.2"
   }
 }
