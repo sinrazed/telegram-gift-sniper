@@ -17,6 +17,6 @@
     "inquirer": "^8.2.6",
     "telegram": "^1.8.0",
     "input": "^1.0.1",
-    "buffer-envjs": "^1.0.2"
+    "buffer-envjs": "^1.0.3"
   }
 }
