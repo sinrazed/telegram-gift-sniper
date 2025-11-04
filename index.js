@@ -430,7 +430,7 @@ run().catch(async err => {
     console.error(err);
     await logMessage(`Critical error: ${err.message}`, 'ERROR');
     if (activeTgClient) {
-        console.log(chalk ? chalk.gray(`[${new Date().toISOString()}] [App] Attempting to disconnect Telegram client due to critical error...`) : 
+        console.log(chalk ? chalk.gray(`[${new Date().toISOString()}] [App] Attempting to disconnect Telegram client due to critical error....`) : 
             `[${new Date().toISOString()}] [App] Attempting to disconnect Telegram client due to critical error...`);
         try {
             await telegramManager.disconnectClient(activeTgClient, chalk);
@@ -443,3 +443,4 @@ run().catch(async err => {
     }
     process.exit(1);
 });
+
