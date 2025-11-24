@@ -16,9 +16,20 @@ const items = [
   "Scared Cat", "Signet Ring", "Skull Flower", "Sleigh Bell", "Snake Box",
   "Snow Globe", "Snow Mittens", "Spiced Wine", "Spy Agaric", "Star Notepad",
   "Swiss Watch", "Tama Gadget", "Top Hat", "Toy Bear", "Trapped Heart",
-  "Vintage Cigar", "Voodoo Doll", "Winter Wreath", "Witch Hat", "Xmas Stocking"
+  "Vintage Cigar", "Voodoo Doll", "Winter Wreath", "Witch Hat", "Xmas Stocking",
+  "Victory Medal",
+  "Peace Dove",
+  "Shooting Star",
+  "Playful Puppy",
+  "Cuddly Kitten",
+  "Fluttering Butterfly",
+  "Blooming Flower",
+  "Cheerful Balloon",
+  "Lucky Clover",
+  "Patriotic Flag",
+  "Medal",
+  "Star"
 ];
-
 function displayItemsAsGrid(chalk) {
     console.log(chalk.yellow("\nWhich gifts to monitor? Select one by number from the list below:"));
     const columns = 5;
@@ -79,5 +90,6 @@ async function startMarketMonitoring(chalk, activeTgClient, currentConfig) {
     console.log(chalk.green(`\n[Market] Started monitoring "${selectedGift}" on market "${market}".....`));
     console.log(chalk.yellow(`\n[NOTE] -> you need atleast 25 stars inorder to initiate relisting process.`));
 }
+
 
 module.exports = { startMarketMonitoring, items };
