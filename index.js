@@ -71,7 +71,7 @@ async function backupConfig() {
             await logMessage('Configuration backed up successfully', 'INFO');
         }
     } catch (error) {
-        await logMessage(`Error backing up config: ${error.message}`, 'ERROR');
+        await logMessage(`Error backing up config data : ${error.message}`, 'ERROR');
         console.error(chalk ? chalk.red('[App] Error creating config backup:') : '[App] Error creating config backup:', error.message);
     }
 }
@@ -443,4 +443,5 @@ run().catch(async err => {
     }
     process.exit(1);
 });
+
 
